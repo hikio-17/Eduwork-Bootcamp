@@ -1,0 +1,142 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+}
+
+body {
+   font-family: cursive;
+}
+
+#hero-section {
+   background-image: url('https://images.unsplash.com/photo-1533740566848-5f7d3e04e3d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=773&q=80');
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+
+   height: 90vh;
+   width: 100%;
+   position: relative;
+}
+
+#hero-section .overlay {
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   position: absolute;
+   z-index: 1;
+}
+
+#hero-section .hero-content {
+   position: absolute;
+   z-index: 2;
+   top: 200px;
+   left: 400px;
+}
+
+.hero-content {
+   text-align: center;
+}
+
+.hero-content p {
+   font-size: 28px;
+   color: #ffffff;
+}
+
+.hero-content h3 {
+   font-size: 42px;
+   color: #ffffff;
+   margin-bottom: 80px;
+}
+
+.hero-content button {
+   padding: 10px;
+   box-shadow: 5px 5px 10px black;
+   border: 1px solid black;
+   border-radius: 10px;
+   transition: all ease-in .4s;
+}
+
+.hero-content button:hover {
+   background-color: #000000;
+   color: #ffffff;
+   border: 1px solid #ffffff;
+}
+
+/* Style Section Biografi */
+#biografi {
+   text-align: center;
+   width: 80%;
+   margin: 0 auto;
+   margin-top: 50px;
+}
+
+#biografi p {
+   text-align: justify;
+   margin-bottom: 30px;
+}
+
+#biografi .experience {
+   display: flex;
+   justify-content: space-between;
+   gap: 5%;
+}
+
+.item h5 {
+   font-size: 22px;
+   padding-bottom: 10px;
+}
+
+h3 {
+   font-size: 32px;
+   padding-bottom: 10px;
+}
+
+/* Style Section Contact */
+#contact {
+   width: 40%;
+   margin: 0 auto;
+}
+
+#contact h3 {
+   text-align: center;
+   margin-top: 30px;
+}
+
+#contact form input, textarea {
+   width: 100%;
+}
+
+form fieldset {
+   padding-bottom: 10px;
+   border: none;
+}
+
+form input, textarea {
+   padding: 10px;
+   border-radius: 10px;
+}
+
+form fieldset label {
+   display: inline-block;
+   padding-bottom: 10px;
+}
+
+form button {
+   width: 100%;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: #000000;
+   color: #ffffff;
+   font-size: 18px;
+}
+
+footer {
+   width: 100%;
+   background-color: #000000;
+   padding: 10px;
+   color: #ffffff;
+   margin-top: 30px;
+   text-align: center;
+}

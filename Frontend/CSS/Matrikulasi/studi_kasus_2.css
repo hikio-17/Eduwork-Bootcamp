@@ -1,0 +1,78 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+
+body, main {
+   width: 100%;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+   display: flex;
+   justify-content: center;
+   gap: 5%;
+}
+
+nav a {
+   padding: 15px;
+   color: black;
+}
+
+#header {
+   background-color: pink;
+   height: 250px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#content {
+   margin-top: 20px;
+   padding: 20px 150px;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+#content .left-content {
+   width: 75%;
+   padding-right: 100px;
+}
+
+.left-content h5 {
+   font-size: 28px;
+}
+
+.left-content p {
+   margin-top: 10px;
+   font-size: 18px;
+   text-align: justify;
+   line-height: 30px;
+}
+
+.line {
+   width: 150px;
+   height: 5px;
+   background-color: pink;
+}
+
+#content .right-content {
+   width: 25%;
+   background-color: lightgrey;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+footer {
+   margin-top: 50px;
+   width: 100%;
+   padding: 10px;
+   background-color: pink;
+   text-align: center;
+   font-size: 22px;
+   font-weight: 700;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tebak Angka</title>
+  </head>
+  <body>
+    <script>
+      alert(`
+         Selamat datang di game tebak Angka
+         kamu diminta untuk menebak angka 1 - 3
+         dan kamu akan bermain dalam 5 ronde.
+         player yang berhasil mengumpulkan
+         tebakan terbanyak akan menang
+         SELAMAT BERMAIN !!!
+         `)
+
+      let ronde = 1
+      let match = true
+
+      let scorePlayer1 = 0
+      let scorePlayer2 = 0
+
+      let inputPlayer1 = null
+      let inputPlayer2 = null
+
+      function randomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min)
+      }
+
+      function validasiInputan(input1, input2) {
+        if (input1 === undefined || input2 === undefined) {
+          alert('Salah satu player belum menebak')
+          return (match = false)
+        }
+
+        if (typeof input1 !== 'number' || typeof input2 !== 'number') {
+          alert('Salah satu player belum menebak !')
+          return (match = false)
+        }
+
+        if (input1 > 3 || input2 > 3) {
+          alert('Tebakan tidak boleh lebih besar dari 3')
+          return (match = false)
+        }
+
+        if (input1 === input2) {
+          alert('Tebakan tidak boleh sama')
+          return (match = false)
+        }
+
+        return true
+      }
+
+      function playGame() {
+        const numberRandom = randomNumber(1, 3)
+
+        inputPlayer1 = parseInt(prompt('Player 1: masukan angka'))
+        inputPlayer2 = parseInt(prompt('Player 2: masukan angka'))
+
+        let validInput = validasiInputan(inputPlayer1, inputPlayer2)
+
+        if (!validInput) {
+          if (confirm('Ulangi ?')) {
+            match = true
+            playGame()
+          } else {
+            return (match = false)
+          }
+        }
+
+        if (validInput) {
+          if (inputPlayer1 === numberRandom) {
+            scorePlayer1 += 1
+            alert('Player 1 Win')
+          } else if (inputPlayer2 === numberRandom) {
+            scorePlayer2 += 1
+            alert('Player 2 Win')
+          } else {
+            alert('Tidak ada yang benar. hasil SERI')
+          }
+
+          alert(`
+         Nilai yang dicari: ${numberRandom}
+         --------------------------------------
+         - Player 1: ${scorePlayer1}
+         - Player 2: ${scorePlayer2}
+       `)
+        } else {
+          match === false
+        }
+      }
+
+      while (ronde <= 5) {
+        if (!match) break
+        if (ronde === 1 && match) {
+          playGame()
+        } else if (confirm(`Ronde ${ronde}?`) && match) {
+          playGame()
+        } else break
+        ronde++
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+* {
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+}
+
+.card:hover {
+   background-color: #212529;
+   color: #ffffff;
+   transition: all ease-in .5s;
+}
+

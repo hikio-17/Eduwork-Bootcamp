@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Berita</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <header>
+      <nav
+        class="navbar bg-dark border-bottom border-body fixed-top"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand">Navbar</a>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Section Carousel -->
+      <section>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide mt-4 container-fluid">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="https://www.kpu.go.id/images/1693197046Penguatan%20Rencana%20Pembuatan%20Prangko%20Edisi%20Khusus%20Pemilu%202024.jpg" class="d-block w-100" height="400px" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://lh3.googleusercontent.com/proxy/0p2Hey9cXuQ0RDpj7lrwUR46Pt4FXsuPwiTEUStfXc79mhf7GjGOoFGz8H-AHIrtK8fJqPE9ZKDnV-iG4Iqh74lRWmPoi1wpuMjM8uM4piDLcCWAF8lKsZQV038Zbt9PBSSN38IDfUaY0QT750RR1iMYsslODFZqRQgBAFESVmJC2gXqdh6BvlRfPy1U_X_iJZCIAiDt25FBHoTUW7uvNK-z9T8OBaiKUMWtQEj1N5nmbnlYkkhVWBhA46aD61wsP_8=s0-w350-h175-rw-dcgRCYyBQJ" class="d-block w-100" alt="..." height="400px" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.peruri.co.id/upload/news/berita-terkini-1692974706-64e8be72cfa99.jpeg" class="d-block w-100" alt="..." height="400px" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Section Top Headline News -->
+
+      <section id="top-news">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h3>Top News</h3>
+            </div>
+          </div>
+
+          <div class="row mt-3" id="list-news">
+            
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
